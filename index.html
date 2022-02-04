@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Link para importar os botões de player do vídeo-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!--Link para importar a fonte do player-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!--referencia ao css-->
+  <link rel="stylesheet" href="style.css">
+  <title>Player de Música</title>
+</head>
+
+<body>
+  <!--Imagem referente a música e sua descrição-->
+  <img src="imagens/Funk.jpg" alt="Mc Davi e Mc Pedrinho - 5 Mentes (Funk)">
+  <!--Texto indicando o nome da musica e do cantor-->
+  <div class="descricao">
+    <h2>5 Mentes </h2>
+    <i>Mc Davi e Mc Pedrinho - (Funk)</i>
+  </div>
+  <!--Barra de progresso da musica-->
+  <div class="duracao">
+    <div class="barra">
+      <progress value="0" max="1"></progress>
+      <div class="ponto"></div>
+    </div>
+    <div class="tempo">
+      <p class="inicio">0:00</p>
+      <p class="fim">3:00</p>
+    </div>
+  </div>
+  <!--Botões funcionais do player-->
+  <div class="player">
+    <!--botão esquerda-->
+    <i class="fas fa-step-backward setas anterior"></i>
+    <!--botão play-->
+    <i class="far fa-play-circle botao-play"></i>
+    <!--botao pause-->
+    <i class="far fa-pause-circle botao-pause"></i>
+    <!--botão direita-->
+    <i class="fas fa-step-forward setas proxima"></i>
+  </div>
+  <audio src="musicas/MC Davi e MC Pedrinho - 5 Mentes Lyric Video.mp3"></audio>
+  <!--SCRIPT-->
+  <script src="script.js"></script>
+</body>
+
+</html>
